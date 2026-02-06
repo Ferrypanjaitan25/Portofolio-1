@@ -1,53 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="./assets/icon/favicon.ico" 
-     type="image/x-icon" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- css -->
-    <link rel="stylesheet" href="./dist/css/style.css" />
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./assets/icon/favicon.ico" type="image/x-icon" />
 
-    <!-- Font Poppins -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    
-    <title>PORTOFOLIO | Ngoding Mastery</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="./dist/css/style.css" />
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- font Awesome CDN  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- AOS ANIMATION -->
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+  <title>PORTOFOLIO | Ngoding Mastery</title>
 </head>
-<body>
-<header>
+<body id="beranda">
+  <!-- scroll Top Up -->
+   <div class="scroll-up">
+    <a href="#beranda">
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
+   </div>
+  <!-- HEADER -->
+  <header>
     <!-- Navbar -->
     <div class="navbar">
       <div class="container">
         <div class="navbar-box">
-            <ul class="menu">
-                <li><a href="#Tentang">Tentang</a></li>
-                <li><a href="#Proyek">Proyek</a></li>
-                <li><a href="#Kontak">Kontak</a></li>
-            </ul>
-        </div>  
-      </div>
-    </div>
-    <!-- Navbar -->
-    
-    <!-- Hero -->
-    <div class="hero">
-      <div class="container">
-        <div class="hero-box">
-            <img src="./assets/images/Liony Web.jpeg" alt="Hero Image" />
-            <h1>
-                Hai!, Saya <span>Liony Tamara Lewinsky</span> <br />
-                Software Engineer & Designer
-            </h1>
+          <ul class="menu">
+            <li><a href="#Tentang">Tentang</a></li>
+            <li><a href="#Proyek">Proyek</a></li>
+            <li><a href="#Kontak">Kontak</a></li>
+          </ul>
         </div>
       </div>
     </div>
 
-    <!-- JS -->
-     <script src="./dist/js/script.js"></script>
+    <!-- Hero -->
+    <div class="hero">
+      <div class="container">
+        <div class="hero-box">
+          <img src="./assets/images/Foto Ferry.jpeg" alt="Hero Image" />
+          <h1>
+            Hai!, Saya <span id="element"></span><br />
+            Software Engineer & Designer
+          </h1>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- WAVES (Hero ke Tentang) -->
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path
+      fill="gray"
+      d="M0,64L48,85.3C96,107,192,149,288,154.7C384,160,480,128,576,138.7C672,149,768,203,864,229.3C960,256,1056,256,1152,245.3C1248,235,1344,213,1392,202.7L1440,192L1440,320L0,320Z"
+    />
+  </svg>
+
+  <!-- TENTANG -->
+  <div class="tentang" id="Tentang">
+    <div class="container">
+      <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-once="false">Tentang</h1>
+      <div class="tentang-box">
+        <!-- ABOUT -->
+        <div class="box">
+          <img src="./assets/images/tentang.png" alt="Tentang image" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true"/>
+<div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
+  <p>
+    Hai, nama saya <span>Ferry Ando H.O Panjaitan</span>. Saya memiliki
+    ketertarikan besar di bidang Software Engineering dan Desain.
+    Ketertarikan ini berawal dari rasa penasaran saya terhadap bagaimana
+    sebuah ide dapat diubah menjadi tampilan visual yang fungsional dan
+    menarik.
+    Selama beberapa tahun terakhir, saya telah mengerjakan berbagai
+    proyek yang menggabungkan pengembangan aplikasi dan desain
+    antarmuka.
+  </p>
+  <a href="#Proyek">Lihat Daftar Proyek</a>
+</div>
+
+        </div>
+
+        <!-- TOOLS -->
+        <div class="box" data-aos="fade-up" data-aos-duration="1000">
+          <h2>Tools yang biasa dipakai</h2>
+          <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" >Berikut ini beberapa tools yang biasa dipakai</p>
+          <div class="tools">
+            <div class="tools-box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+              <img src="./assets/images/tools/tailwind.png" />
+              <div>
+                <h3>TailwindCSS</h3>
+                <p>CSS Framework</p>
+              </div>
+            </div>
+
+            <div class="tools-box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="450">
+              <img src="./assets/images/tools/reactjs.png" />
+              <div>
+                <h3>React JS</h3>
+                <p>Framework Javascript</p>
+              </div>
+            </div>
+
+            <div class="tools-box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+              <img src="./assets/images/tools/nodejs.png" />
+              <div>
+                <h3>Node JS</h3>
+                <p>Runtime</p>
+              </div>
+            </div>
+
+            <div class="tools-box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="550">
+              <img src="./assets/images/tools/nextjs.png" />
+              <div>
+                <h3>Next JS</h3>
+                <p>Framework</p>
+              </div>
+            </div>
+
+            <div class="tools-box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+              <img src="./assets/images/tools/js.png" />
+              <div>
+                <h3>Javascript</h3>
+                <p>Language</p>
+              </div>
+            </div>
+
+            <div class="tools-box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="650">
+              <img src="./assets/images/tools/github.png" />
+              <div>
+                <h3>Github</h3>
+                <p>Repository</p>
+              </div>
+            </div>
+
+            <div class="tools-box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">
+              <img src="./assets/images/tools/figma.png" />
+              <div>
+                <h3>Figma</h3>
+                <p>Design App</p>
+              </div>
+            </div>
+
+            <div class="tools-box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="750">
+              <img src="./assets/images/tools/vscode.png" />
+              <div>
+                <h3>VS Code</h3>
+                <p>Code Editor</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- WAVES (Tentang ke section berikutnya) -->
+  <!-- Waves -->
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path
+      fill="gray"
+      fill-opacity="1"
+      d="M0,64L48,85.3C96,107,192,149,288,154.7C384,160,480,128,576,138.7C672,149,768,203,864,229.3C960,256,1056,256,1152,245.3C1248,235,1344,213,1392,202.7L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+    />
+  </svg>
+  <!-- Waves -->
+
+<!-- Proyek -->
+<section class="proyek" id="Proyek">
+  <div class="container">
+    <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">Daftar Proyek</h1>
+    <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Berikut ini beberapa proyek yang telah saya kerjakan</p>
+
+    <div class="proyek-box">
+      <!-- Proyek 1 -->
+      <div class="box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+        <img src="./assets/images/proyek/proyek-Delschedule.webp" alt="Website Delschedule">
+        <div class="proyek-desc">
+          <h2>Website Delschedule</h2>
+          <p>Website Company Profile Delschedule</p>
+          <div class="proyek-btn">
+<a href="https://lionytamara.github.io/lp-4" target="_blank">Lihat Website</a>
+<a href="https://github.com/proyek-mahasiswa/psi-2425ge-07-delschedule" target="_blank">Lihat Github</a>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Proyek 2 -->
+      <div class="box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+        <img src="./assets/images/proyek/proyek2_Delcare.jpg" alt="Proyek image" />
+        <div class="proyek-desc">
+          <h2>Website DelCare</h2>
+          <p>Website Company Profile DelCare</p>
+          <div class="proyek-btn">
+            <a href="http://127.0.0.1:8000/user">Lihat Website</a>
+            <a href="https://github.com/lionytamara/Delcare">Lihat Github</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Proyek 3 -->
+      <div class="box" data-aos="fade-up" data-aos-duration="1000">
+        <img src="./assets/images/proyek/proyek3.webp" alt="Proyek image" />
+        <div class="proyek-desc">
+          <h2>Website DelCare</h2>
+          <p>Website Company Profile DelCare</p>
+          <div class="proyek-btn">
+            <a href="#">Lihat Website</a>
+            <a href="#">Lihat Github</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Proyek 4 -->
+      <div class="box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+        <img src="./assets/images/proyek/proyek4.webp" alt="Proyek image" />
+        <div class="proyek-desc">
+          <h2>Website DelCare</h2>
+          <p>Website Company Profile DelCare</p>
+          <div class="proyek-btn">
+            <a href="#">Lihat Website</a>
+            <a href="#">Lihat Github</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+<!-- Proyek -->
+
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="gray"
+          fill-opacity="1"
+          d="M0,64L48,85.3C96,107,192,149,288,154.7C384,160,480,128,576,138.7C672,149,768,203,864,229.3C960,256,1056,256,1152,245.3C1248,235,1344,213,1392,202.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+
+   <!-- Proyek -->
+<!-- kontak -->
+ <footer id ="Kontak">
+  <p>&copy; Copyright 2026 by <span>Ferry Ando H.O Panjaitan</span></p>
+  <div class="social">
+<a href="https://www.instagram.com/liony_lewinsky/" target="_blank" rel="noopener">
+  <i class="fa-brands fa-square-instagram"></i>
+</a>
+<a href="https://www.facebook.com/" target="_blank" rel="noopener">
+  <i class="fa-brands fa-square-facebook"></i>
+</a>
+<a href="https://wa.me/6282267982081" target="_blank" rel="noopener noreferrer" aria-label="Chat WhatsApp">
+  <i class="fa-brands fa-square-whatsapp"></i>
+</a>
+
+        <a href="https://www.linkedin.com/in/liony-tamara-lewinsky-03112523b/" target="_blank" rel="noopener">
+      <i class="fa-brands fa-linkedin"></i>
+    </a>
+  </div>
+ </footer>
+
+  <!-- JS -->
+  <script src="./dist/js/script.js"></script>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script>
+    new Typed("#element", {
+      strings: ["Ferry", "Ando", "Helvy", "Oktovianus", "Panjaitan"],
+      typeSpeed: 100,
+      backSpeed: 50,
+      loop: true,
+      showCursor: false,
+    });
+  </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
